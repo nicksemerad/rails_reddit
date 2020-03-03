@@ -1,0 +1,7 @@
+<h1> <%= @sub.id ? 'Edit Sub' : 'New Sub' %> </h1>
+</br>
+<%= form_for @sub do |f| %>
+  <%= f.label :name%>
+  <%= f.text_field :name, required: true%>
+  <%= f.submit %>
+<% end %>
